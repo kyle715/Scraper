@@ -1,0 +1,40 @@
+﻿@model IEnumerable<FinalScraper.Stock>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>MAKING THIS CHANGE FOR A COMMIT</p>
+@if (Session["UserID"] != null)
+{
+    using (Html.BeginForm("Scrape", "stock"))
+    {
+        <button type="submit" class="btn btn-primary">Create New Snapshot</button>
+    }
+    <p>Please give Website about 45 seconds to generate new snapshot once button is clicked.</p>
+    <table class="table">
+        <tr>
+            <th>
+                Time Stamps
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateAndTime);
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+else
+{
+    <h1>Please Register and Log in to Use this part of Web Application</h1>
+}

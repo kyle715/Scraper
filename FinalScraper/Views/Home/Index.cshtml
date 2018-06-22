@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>My Scraper Project</h1>
+    <p class="lead">Here in this Web Application you will be able to register and login to your account.<br /> Which will let you create snapshots of my Yahoo Finance Portfolio page and view them after being pushing to my SQL database.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>About</h2>
+        <p>
+            Click here to Learn more about the process in which i had to go through to create this project
+        </p>
+        <p class="btn btn-default">@Html.ActionLink("About", "About", "Home")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Contact</h2>
+        <p>Contact me about any questions or comments you may have about this page.</p>
+        <p class="btn btn-default">@Html.ActionLink("Contact", "Contact", "Home")</p>
+    </div>
+</div>

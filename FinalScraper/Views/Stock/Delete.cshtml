@@ -1,0 +1,352 @@
+﻿@model FinalScraper.Stock
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Stock</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPrice10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPrice10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangePercent10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangePercent10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketCap10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketCap10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAndTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAndTime)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

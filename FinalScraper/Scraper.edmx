@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TheScraperModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Stocks">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Symbol1" Type="nchar" MaxLength="10" />
+          <Property Name="Symbol2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol5" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol6" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol7" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol8" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol9" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Symbol10" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice5" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice6" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice7" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice8" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice9" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CurrentPrice10" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent5" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent6" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent7" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent8" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent9" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ChangePercent10" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap5" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap6" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap7" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap8" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap9" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="MarketCap10" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="DateAndTime" Type="smalldatetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TheScraperModelStoreContainer">
+          <EntitySet Name="Stocks" EntityType="Self.Stocks" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TheScraperModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Stock">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Symbol1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Symbol2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol8" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Symbol10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice8" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CurrentPrice10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent8" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ChangePercent10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap5" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap6" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap7" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap8" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap9" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MarketCap10" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="DateAndTime" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="TheScraperEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Stocks" EntityType="Self.Stock" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TheScraperModelStoreContainer" CdmEntityContainer="TheScraperEntities">
+          <EntitySetMapping Name="Stocks">
+            <EntityTypeMapping TypeName="TheScraperModel.Stock">
+              <MappingFragment StoreEntitySet="Stocks">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Symbol1" ColumnName="Symbol1" />
+                <ScalarProperty Name="Symbol2" ColumnName="Symbol2" />
+                <ScalarProperty Name="Symbol3" ColumnName="Symbol3" />
+                <ScalarProperty Name="Symbol4" ColumnName="Symbol4" />
+                <ScalarProperty Name="Symbol5" ColumnName="Symbol5" />
+                <ScalarProperty Name="Symbol6" ColumnName="Symbol6" />
+                <ScalarProperty Name="Symbol7" ColumnName="Symbol7" />
+                <ScalarProperty Name="Symbol8" ColumnName="Symbol8" />
+                <ScalarProperty Name="Symbol9" ColumnName="Symbol9" />
+                <ScalarProperty Name="Symbol10" ColumnName="Symbol10" />
+                <ScalarProperty Name="CurrentPrice1" ColumnName="CurrentPrice1" />
+                <ScalarProperty Name="CurrentPrice2" ColumnName="CurrentPrice2" />
+                <ScalarProperty Name="CurrentPrice3" ColumnName="CurrentPrice3" />
+                <ScalarProperty Name="CurrentPrice4" ColumnName="CurrentPrice4" />
+                <ScalarProperty Name="CurrentPrice5" ColumnName="CurrentPrice5" />
+                <ScalarProperty Name="CurrentPrice6" ColumnName="CurrentPrice6" />
+                <ScalarProperty Name="CurrentPrice7" ColumnName="CurrentPrice7" />
+                <ScalarProperty Name="CurrentPrice8" ColumnName="CurrentPrice8" />
+                <ScalarProperty Name="CurrentPrice9" ColumnName="CurrentPrice9" />
+                <ScalarProperty Name="CurrentPrice10" ColumnName="CurrentPrice10" />
+                <ScalarProperty Name="ChangePercent1" ColumnName="ChangePercent1" />
+                <ScalarProperty Name="ChangePercent2" ColumnName="ChangePercent2" />
+                <ScalarProperty Name="ChangePercent3" ColumnName="ChangePercent3" />
+                <ScalarProperty Name="ChangePercent4" ColumnName="ChangePercent4" />
+                <ScalarProperty Name="ChangePercent5" ColumnName="ChangePercent5" />
+                <ScalarProperty Name="ChangePercent6" ColumnName="ChangePercent6" />
+                <ScalarProperty Name="ChangePercent7" ColumnName="ChangePercent7" />
+                <ScalarProperty Name="ChangePercent8" ColumnName="ChangePercent8" />
+                <ScalarProperty Name="ChangePercent9" ColumnName="ChangePercent9" />
+                <ScalarProperty Name="ChangePercent10" ColumnName="ChangePercent10" />
+                <ScalarProperty Name="MarketCap1" ColumnName="MarketCap1" />
+                <ScalarProperty Name="MarketCap2" ColumnName="MarketCap2" />
+                <ScalarProperty Name="MarketCap3" ColumnName="MarketCap3" />
+                <ScalarProperty Name="MarketCap4" ColumnName="MarketCap4" />
+                <ScalarProperty Name="MarketCap5" ColumnName="MarketCap5" />
+                <ScalarProperty Name="MarketCap6" ColumnName="MarketCap6" />
+                <ScalarProperty Name="MarketCap7" ColumnName="MarketCap7" />
+                <ScalarProperty Name="MarketCap8" ColumnName="MarketCap8" />
+                <ScalarProperty Name="MarketCap9" ColumnName="MarketCap9" />
+                <ScalarProperty Name="MarketCap10" ColumnName="MarketCap10" />
+                <ScalarProperty Name="DateAndTime" ColumnName="DateAndTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

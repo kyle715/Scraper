@@ -1,0 +1,206 @@
+﻿@model FinalScraper.Stock
+
+@{
+    ViewBag.Title = "Snapshot Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.DateAndTime)</h4>
+    <hr />
+
+    @*<table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>*@
+
+    <table class="table">
+        <tr>
+            <th>
+                Symbol
+            </th>
+            <th>
+                Current Price
+            </th>
+            <th>
+                Change %
+            </th>
+            <th>
+                Market Cap
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap1)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol2)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice2)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent2)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap2)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol3)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice3)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent3)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap3)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol4)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice4)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent4)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap4)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol5)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice5)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent5)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap5)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol6)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice6)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent6)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap6)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol7)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice7)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent7)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap7)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol8)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice8)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent8)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap8)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol9)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice9)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent9)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap9)
+            </td>
+        </tr>
+         
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Symbol10)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CurrentPrice10)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ChangePercent10)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MarketCap10)
+            </td>
+        </tr>
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
