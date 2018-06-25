@@ -19,17 +19,12 @@ namespace FinalScraper.Controllers
         // GET: Stock
         public ActionResult Index(string sortOrder)
         {
-            //ViewData["DateSortParm"] = sortOrder == "Date" ? "Date_desc" : "Date";
-
-            //var portfolioSnapshots = from s in db.Stocks
-            //                         select s;
-            //switch (sortOrder)
-            //{
-            //    default:
-            //        portfolioSnapshots = portfolioSnapshots.OrderByDescending(s => s.DateAndTime);
-            //        break;
-            //}
-            return View(db.Stocks.ToList());
+            ViewBag.DateSortParm = sortOrder == "Date";
+            var stocks = from s in db.Stocks
+                           select s;
+                    stocks = stocks.OrderBy(s => s.DateAndTime);
+            
+            return View(stocks.ToList());
         }
 
         // GET: Stock/Details/5
